@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Writing Website</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Blog Writing Website</h1>
+  </header>
+
+  <div class="container">
+    <section id="blog-posts">
+      <h2>Existing Blog Posts</h2>
+      <div id="posts-list">
+        <!-- Blog posts will be displayed here dynamically -->
+      </div>
+    </section>
+
+    <button id="create-blog-btn" class="create-btn">Create Blog</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      displayExistingBlogPosts();
+    });
+  </script>
+  
+  <script src="indexscript.js"></script>
+</body>
+</html>

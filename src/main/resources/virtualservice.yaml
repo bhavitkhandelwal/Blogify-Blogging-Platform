@@ -1,0 +1,21 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: my-api
+spec:
+  hosts:
+    - "*"  # Replace with your API host
+  http:
+    - match:
+        - uri:
+            prefix: "/v1"  # Match requests starting with /api
+      route:
+        - destination:
+            host: "/v1" # Replace with the actual destination service
+  corsPolicy:
+    allowHeaders:
+      - '*'
+    allowMethods:
+      - POST
+    allowOrigin:
+      - '*'
