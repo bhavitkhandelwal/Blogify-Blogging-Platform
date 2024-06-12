@@ -1,1 +1,1 @@
-# Blogify-Blogging-Platform
+# Blogify-A-Full-Stack-Blogging-Platform
